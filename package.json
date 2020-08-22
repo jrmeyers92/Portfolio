@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Jake Meyers Web Development Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles/style.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrmeyers92/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "web-development",
+    "Jake",
+    "Meyers"
+  ],
+  "author": "Jake Meyers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrmeyers92/Portfolio/issues"
+  },
+  "homepage": "https://github.com/jrmeyers92/Portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
