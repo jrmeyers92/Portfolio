@@ -1,0 +1,18 @@
+.nav {
+  font-size: 2rem;
+  position: absolute;
+  color: #999;
+  cursor: pointer;
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    height: 7rem;
+  }
+
+  &__item {
+    margin: 0 3rem;
+  }
+}

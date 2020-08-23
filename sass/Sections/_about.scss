@@ -1,0 +1,10 @@
+.about-me {
+  height: 100vh;
+
+  &__profile-pic {
+    height: 10rem;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+  }
+}

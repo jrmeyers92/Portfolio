@@ -16,12 +16,79 @@ body {
 .font-weight-light {
   font-weight: 200; }
 
+.align-center {
+  text-align: center; }
+
+.margin-top-medium {
+  padding-top: 4rem; }
+
 .header-contact {
   height: 7rem;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   background-color: #333;
   color: white; }
+  .header-contact__item {
+    margin-right: 6rem; }
+
+.landing-page {
+  height: 93vh;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../../img/background_large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  .landing-page__headings {
+    margin-top: -18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .landing-page__heading-primary {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-weight: 300; }
+  .landing-page__heading-secondary {
+    font-size: 3.5rem;
+    font-weight: 100;
+    align-self: flex-start; }
+  .landing-page__arrow {
+    cursor: pointer;
+    height: 10rem;
+    width: 10rem;
+    margin-top: 8rem;
+    transition: all 0.2s; }
+    .landing-page__arrow:hover, .landing-page__arrow:active {
+      transform: scale(1.2); }
+
+.about-me {
+  height: 100vh; }
+  .about-me__profile-pic {
+    height: 10rem;
+    border-radius: 50%;
+    display: inline-block;
+    float: left; }
+
+.nav {
+  font-size: 2rem;
+  position: absolute;
+  color: #999;
+  cursor: pointer; }
+  .nav__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    height: 7rem; }
+  .nav__item {
+    margin: 0 3rem; }
+
+.heading-main {
+  font-size: 3.5rem;
+  font-weight: 200; }
