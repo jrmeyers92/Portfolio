@@ -1,10 +1,36 @@
 .about-me {
-  height: 100vh;
+  // height: 100vh;
+  margin: 3rem;
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__left {
+    width: 50%;
+    margin-left: 4rem;
+  }
 
   &__profile-pic {
     height: 10rem;
     border-radius: 50%;
     display: inline-block;
     float: left;
+    margin: 2rem;
+    shape-outside: circle(50%);
+  }
+
+  &__para {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+  }
+
+  &__picture {
+    height: 40rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
