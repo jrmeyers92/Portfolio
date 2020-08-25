@@ -14,5 +14,11 @@
 
   &__item {
     margin: 0 3rem;
+    transition: all 0.13s;
+
+    &:hover,
+    &:active {
+      color: white;
+    }
   }
 }
