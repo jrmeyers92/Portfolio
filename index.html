@@ -16,10 +16,10 @@
     <header>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item">About Me</li>
-          <li class="nav__item">Technolgies</li>
-          <li class="nav__item">Projects</li>
-          <li class="nav__item">Contact</li>
+          <li class="nav__item"><a href="#about-me"> About Me</a></li>
+          <li class="nav__item"><a href="#technologies">Technolgies</a></li>
+          <li class="nav__item"><a href="#projects"> Projects</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
         </ul>
       </nav>
 
@@ -42,11 +42,15 @@
           >
             A Web Developer.
           </h2>
-          <img src="img/chevron-down-outline.svg" class="landing-page__arrow" />
+          <a href="#about-me"
+            ><img
+              src="img/chevron-down-outline.svg"
+              class="landing-page__arrow"
+          /></a>
         </div>
       </section>
 
-      <section class="about-me">
+      <section class="about-me" id="about-me">
         <h2 class="heading-main align-center">
           A little bit about me.
         </h2>
@@ -88,8 +92,8 @@
           </div>
         </div>
       </section>
-      <section class="technologies">
-        <h2 class="heading-main align-center margin-t-large">Technologies</h2>
+      <section class="technologies" id="technologies">
+        <h2 class="heading-main align-center color-white">Technologies</h2>
         <div class="technologies__boxes">
           <div class="feature-box technologies__box">
             <ion-icon
@@ -129,7 +133,9 @@
           </div>
         </div>
       </section>
-      <section class="projects"></section>
+      <section class="projects" id="projects">
+        <h2 class="heading-main align-center">Projects</h2>
+      </section>
     </header>
   </body>
 </html>

@@ -5,15 +5,14 @@
   display: flex;
   border-radius: 5px;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
-  margin-top: 4rem;
-  margin-bottom: 10rem;
+  margin-bottom: 10.02rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: rgb(87, 87, 87);
 
   &__content {
-    margin: 2rem;
+    // margin: 2rem;
   }
 
   &__icon {
@@ -35,6 +34,5 @@
   & span {
     font-size: 2rem;
     margin: 0.3rem;
-    margin-top: 1rem;
   }
 }
