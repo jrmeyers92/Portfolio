@@ -1,0 +1,49 @@
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrapper {
+  width: 30%;
+  position: relative;
+  float: left;
+}
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &__side {
+    height: 50rem;
+    width: 40rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color: black, $alpha: 0.15);
+    font-size: 5rem;
+    text-align: center;
+
+    &--front {
+      background-color: rgb(216, 216, 216);
+    }
+
+    &--back {
+      background-color: rgb(0, 134, 121);
+      color: white;
+      transform: rotateY(180deg);
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+}
