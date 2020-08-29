@@ -67,12 +67,16 @@ body {
 
 .about-me {
   margin: 0 4rem; }
-  .about-me__content {
-    display: flex;
-    justify-content: space-around; }
-  .about-me__left {
-    width: 50%;
-    margin-left: 4rem; }
+  @media (min-width: 1200px) {
+    .about-me__content {
+      display: flex;
+      justify-content: space-around; }
+    .about-me__content {
+      display: flex;
+      justify-content: space-around; }
+    .about-me__left {
+      width: 50%;
+      margin-left: 4rem; } }
   .about-me__profile-pic {
     height: 10rem;
     border-radius: 50%;
@@ -88,8 +92,7 @@ body {
   .about-me__picture {
     height: 40rem;
     margin-bottom: 4rem;
-    border-radius: 4px;
-    box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.4); }
+    border-radius: 4px; }
     .about-me__picture:hover {
       box-shadow: none;
       transform: scale(0.99); }
@@ -167,7 +170,8 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 50rem;
+  font-weight: 100; }
   .card__side {
     height: 50rem;
     width: 40rem;

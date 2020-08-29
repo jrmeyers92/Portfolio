@@ -1,6 +1,12 @@
-const h2Text = document.querySelector(".chaging-h2").innerHTML;
-console.log(h2Text);
+let h2Span = document.querySelector(".chaging-h2");
+const arr = ["Web Developer", "Life-Long Learner", "Fun Haver"];
+let i = 0;
 
-setInterval(() => {
-  h2Text = "a friend";
-}, 7000);
+let changeH2 = setInterval(() => {
+  if (i === arr.length) {
+    i = 0;
+  }
+
+  h2Span.innerHTML = arr[i];
+  i++;
+}, 2000);

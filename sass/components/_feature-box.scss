@@ -1,4 +1,7 @@
 .feature-box {
+  @include atMedium {
+  }
+
   width: 20%;
   height: 30rem;
   background-color: rgb(142, 218, 211);
