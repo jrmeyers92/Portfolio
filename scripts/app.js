@@ -25,7 +25,21 @@ let changeH2 = setInterval(() => {
 //   }
 // });
 
+// document.addEventListener("scroll", () => {
+//   navList.remove("translate");
+// });
+
+const navList = document.querySelector(".nav__list");
+const checkbox = document.querySelector(".toggler__checkbox");
 document.addEventListener("click", (e) => {
-  const navList = document.querySelector(".nav__list");
-  const checkbox = document.querySelector(".toggler__checkbox");
+  if (e.target.classList == "toggler__checkbox") {
+    if (checkbox.checked) {
+      navList.classList.add("translate");
+    } else if (checkbox.checked == false) {
+      navList.classList.remove("translate");
+    }
+  } else {
+    navList.classList.remove("translate");
+    checkbox.checked = false;
+  }
 });
