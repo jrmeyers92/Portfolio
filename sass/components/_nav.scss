@@ -1,28 +1,58 @@
 .nav {
-  font-size: 2rem;
-  position: absolute;
-  color: #999;
-  cursor: pointer;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
 
   &__list {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style-type: none;
-    height: 7rem;
+    transform: translateX(-50rem);
+    position: absolute;
+    transition: all 0.2s;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.856);
+    top: 10vh;
   }
 
   &__item {
-    margin: 0 3rem;
-  }
-  & a {
-    text-decoration: none;
-    color: #999;
-    transition: all 0.13s;
+    list-style-type: none;
+    font-size: 3rem;
+    padding: 2.5rem;
 
     &:hover,
     &:active {
+      background-color: #333;
+    }
+
+    &:hover > a,
+    &:active > a {
       color: white;
     }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: black;
+
+    &:hover,
+    &:active {
+      background-color: #333;
+      color: white;
+    }
+  }
+}
+
+.translate {
+  transform: translateX(0);
+}
+
+.header-contact {
+  float: right;
+  font-size: 2.5rem;
+  margin: 3rem;
+
+  &__item {
+    margin: 3rem;
   }
 }

@@ -15,20 +15,29 @@
   <body>
     <header>
       <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#about-me"> About Me</a></li>
-          <li class="nav__item"><a href="#technologies">Technolgies</a></li>
-          <li class="nav__item"><a href="#projects"> Projects</a></li>
-          <li class="nav__item"><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+        <div class="toggler">
+          <input type="checkbox" class="toggler__checkbox" />
+          <div class="toggler__lines"></div>
+        </div>
 
-      <div class="header-contact">
-        <span class="header-contact__item font-weight-light"
-          >JakeRMeyers92@gmail.com</span
-        >
-        <span class="header-contact__item font-weight-light">417-403-1570</span>
-      </div>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">About Me</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Technologies</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">Projects</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Content</a></li>
+        </ul>
+
+        <div class="header-contact">
+          <span class="header-contact__item font-weight-light"
+            >JakeRMeyers92@gmail.com</span
+          >
+          <span class="header-contact__item font-weight-light"
+            >417-403-1570</span
+          >
+        </div>
+      </nav>
 
       <section class="landing-page">
         <div class="landing-page__headings">
