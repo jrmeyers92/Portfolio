@@ -1,12 +1,12 @@
 .toggler {
   display: inline-block;
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
   margin: 2rem;
   position: relative;
 
   &__checkbox {
-    height: 5rem;
+    height: 3rem;
     width: 5rem;
     position: absolute;
     z-index: 2;

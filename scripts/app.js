@@ -15,20 +15,6 @@ let changeH2 = setInterval(() => {
 
 // toggler menu
 
-// const navList = document.querySelector(".nav__list");
-// const checkbox = document.querySelector(".toggler__checkbox");
-// checkbox.addEventListener("click", () => {
-//   if (checkbox.checked) {
-//     navList.classList.add("translate");
-//   } else {
-//     navList.classList.remove("translate");
-//   }
-// });
-
-// document.addEventListener("scroll", () => {
-//   navList.remove("translate");
-// });
-
 const navList = document.querySelector(".nav__list");
 const checkbox = document.querySelector(".toggler__checkbox");
 document.addEventListener("click", (e) => {

@@ -23,8 +23,11 @@ body {
 .align-center {
   text-align: center; }
 
+.padding-tb-mobile {
+  padding: 2rem 0; }
+
 .landing-page {
-  height: 93vh;
+  height: 90vh;
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../../img/background_large.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,49 +59,37 @@ body {
       transform: scale(1.2); }
 
 .about-me {
-  margin: 0 6rem 6rem 0; }
-  @media (min-width: 1200px) {
-    .about-me__content {
-      display: flex;
-      justify-content: space-around; }
-    .about-me__content {
-      display: flex;
-      justify-content: space-around; }
-    .about-me__left {
-      width: 50%;
-      margin-left: 4rem; } }
+  margin: 0 0 0 0; }
   .about-me__profile-pic {
     height: 10rem;
     border-radius: 50%;
     display: inline-block;
     float: left;
-    margin: 2rem;
+    margin: 0 3rem 0 2rem;
     shape-outside: circle(50%); }
   .about-me__para {
     font-size: 1.8rem;
     line-height: 3rem;
     letter-spacing: 0.5px;
-    margin-bottom: 1rem; }
+    margin: 0 3rem 2rem 3rem; }
   .about-me__picture {
-    height: 40rem;
-    margin-bottom: 4rem;
+    max-width: 100%;
+    min-width: 100%;
     border-radius: 4px; }
-    .about-me__picture:hover {
-      box-shadow: none;
-      transform: scale(0.99); }
 
 .technologies {
-  margin: 0 4rem;
   background-color: #008679; }
   .technologies__boxes {
     display: flex;
-    justify-content: space-evenly; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
 
 .projects {
   height: 100vh; }
 
 .nav {
-  height: 10vh;
+  height: 15vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,7 +101,7 @@ body {
     transition: all 0.2s;
     z-index: 3;
     background-color: rgba(255, 255, 255, 0.856);
-    top: 10vh; }
+    top: 15vh; }
   .nav__item {
     list-style-type: none;
     font-size: 3rem;
@@ -132,7 +123,7 @@ body {
 
 .header-contact {
   float: right;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 3rem; }
   .header-contact__item {
     margin: 3rem; }
@@ -140,17 +131,16 @@ body {
 .heading-main {
   font-size: 3.5rem;
   font-weight: 200;
-  padding: 5rem;
   letter-spacing: 0.2rem; }
 
 .feature-box {
-  width: 20%;
+  width: 80%;
   height: 30rem;
   background-color: #8edad3;
   display: flex;
   border-radius: 5px;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10.02rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,7 +155,7 @@ body {
     color: yellow; }
   .feature-box span {
     font-size: 2rem;
-    margin: 0.3rem; }
+    margin: 0.5rem; }
 
 .cards {
   display: flex;
@@ -207,12 +197,12 @@ body {
 
 .toggler {
   display: inline-block;
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
   margin: 2rem;
   position: relative; }
   .toggler__checkbox {
-    height: 5rem;
+    height: 3rem;
     width: 5rem;
     position: absolute;
     z-index: 2;
