@@ -1,6 +1,18 @@
 .about-me {
   margin: 0 0 0 0;
 
+  &__content {
+    @include atMedium {
+      display: flex;
+    }
+  }
+
+  &__left {
+    @include atMedium {
+      width: 70%;
+    }
+  }
+
   &__profile-pic {
     height: 10rem;
     border-radius: 50%;
@@ -21,5 +33,10 @@
     max-width: 100%;
     min-width: 100%;
     border-radius: 4px;
+
+    @include atMedium {
+      height: 40rem;
+      margin-bottom: 2rem;
+    }
   }
 }
